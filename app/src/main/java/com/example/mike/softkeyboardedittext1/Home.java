@@ -18,6 +18,7 @@ public class Home extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
+		
 		// Reference EditTexts
 		EditText editText1 = findViewById(R.id.editText1);
 		EditText editText2 = findViewById(R.id.editText2);
@@ -42,8 +43,10 @@ public class Home extends AppCompatActivity {
 			editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 				@Override
 				public void onFocusChange(View v, boolean hasFocus) {
+					
 					// If focus is changed, only hide the keyboard if the focus wasn't changed to an EditText
 					int focusCount = 0;
+					
 					// This is probably bad, but so is the Soft Keyboard in general.
 					for (EditText editText : editTexts) {
 						if (editText.hasFocus()) {
@@ -63,7 +66,7 @@ public class Home extends AppCompatActivity {
 			});
 		}
 		
-	} // onCreate
+	} // End of onCreate()
 	
 	public void hideKeyboard(View view) {
 		InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
