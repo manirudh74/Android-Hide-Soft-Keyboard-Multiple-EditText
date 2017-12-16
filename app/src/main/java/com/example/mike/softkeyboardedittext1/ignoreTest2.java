@@ -5,5 +5,5 @@ package com.example.mike.softkeyboardedittext1;
  */
 
 public class ignoreTest2 {
-	String lol2 = "lol2";
+	String lol2 = "lol2xd";
 }
