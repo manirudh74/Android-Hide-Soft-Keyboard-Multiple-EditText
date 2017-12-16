@@ -5,5 +5,5 @@ package com.example.mike.softkeyboardedittext1;
  */
 
 public class ignoreTest {
-	String lol;
+	String lol2;
 }
