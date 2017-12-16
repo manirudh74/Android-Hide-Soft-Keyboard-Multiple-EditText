@@ -56,4 +56,4 @@ freeline/
 freeline_project_description.json
 
 # Test
-*/ignoreTest*
+ignoreTest.class
